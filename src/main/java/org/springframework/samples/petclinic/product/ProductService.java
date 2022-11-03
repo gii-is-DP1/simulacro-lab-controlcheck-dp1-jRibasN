@@ -2,11 +2,14 @@ package org.springframework.samples.petclinic.product;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ProductService {
     private ProductRepository productRepository;
+
+    @Autowired(required = true)
     public List<Product> getAllProducts(){
         return productRepository.findAll();
     }
