@@ -8,6 +8,12 @@ INSERT INTO authorities(id,username,authority) VALUES (2,'owner1','owner');
 INSERT INTO users(username,password,enabled) VALUES ('vet1','v3t',TRUE);
 INSERT INTO authorities(id,username,authority) VALUES (3,'vet1','veterinarian');
 
+INSERT INTO PRODUCT_TYPE(id, name) VALUES (1, 'Accessories');
+INSERT INTO PRODUCT_TYPE(id, name) VALUES (2, 'Food');
+
+INSERT INTO products(id, name, price, p_type_id) VALUES (1, 'Wonderful dog collar', 17.25, 1);
+INSERT INTO products(id, name, price, p_type_id) VALUES (2, 'Super Kitty Cookies', 50, 2);
+
 INSERT INTO vets(id, first_name,last_name) VALUES (1, 'James', 'Carter');
 INSERT INTO vets(id, first_name,last_name) VALUES (2, 'Helen', 'Leary');
 INSERT INTO vets(id, first_name,last_name) VALUES (3, 'Linda', 'Douglas');
